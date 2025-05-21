@@ -67,6 +67,79 @@ nohup streamlit run dsa_app.py --server.port=8501 --server.address=0.0.0.0 &
 # Nota: Quando terminar seus testes, desligue a instância EC2 conforme mostrado nas aulas.
 
 
+-------------------------------------------------------------------------------------------------------------------
+
+README - Plataforma de Análise em Tempo Real com Agentes de IA
+Este projeto implementa uma plataforma analítica em tempo real voltada para operações de day trade. A solução utiliza agentes de Inteligência Artificial integrados a tecnologias como Groq, DeepSeek e AWS para analisar cotações de ativos, notícias do mercado e gerar recomendações automatizadas de compra e venda. A proposta visa aumentar a velocidade, precisão e rentabilidade nas decisões de investidores, além de permitir monetização via assinaturas e serviços premium.
+
+📘 Objetivo do Projeto
+- Automatizar a leitura e interpretação de notícias financeiras.
+- Monitorar cotações de ativos em tempo real.
+- Gerar alertas e recomendações com base em IA.
+- Disponibilizar a solução em nuvem com escalabilidade e confiabilidade.
+- Servir como base para consultorias de dados com foco em agentes inteligentes.
+
+⚙️ Tecnologias Utilizadas
+- Python 3.10+
+- Bibliotecas: pandas, numpy, scikit-learn, requests, dotenv
+- APIs de IA: Groq, DeepSeek
+- Infraestrutura: AWS (S3, Lambda, etc.)
+- Ambiente virtual com venv
+- GitHub para versionamento
+
+📂 Estrutura do Projeto
+dsa_app.py            # Script principal da aplicação
+agents/               # Agentes de IA e análise
+data/                 # Dados brutos e processados
+utils/                # Funções auxiliares (API, parser, etc.)
+requirements.txt      # Lista de dependências
+.env                  # Variáveis de ambiente (não versionar)
+.gitignore            # Exclusões do Git
+README.md             # Documentação do projeto
+venv/                 # Ambiente virtual (não subir para o Git)
+
+🚀 Como Executar o Projeto Localmente
+
+1. Clone o repositório
+git clone https://github.com/seu-usuario/seu-repo.git
+cd seu-repo
+
+2. Crie e ative o ambiente virtual
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# Linux/macOS
+source venv/bin/activate
+
+3. Instale as dependências
+pip install -r requirements.txt
+
+4. Execute o script principal
+python dsa_app.py
+
+🔐 Variáveis de Ambiente
+Crie um arquivo .env no diretório raiz com o seguinte conteúdo:
+
+GROQ_API_KEY=xxxxx
+DEEPSEEK_TOKEN=xxxxx
+AWS_ACCESS_KEY_ID=xxxxx
+AWS_SECRET_ACCESS_KEY=xxxxx
+
+⚠️ O arquivo .env está listado no .gitignore e não deve ser versionado para segurança.
+
+📈 Expansões Futuras
+- Integração com painel web de visualização dos dados e alertas
+- Armazenamento histórico em banco de dados (SQL/NoSQL)
+- Rotinas automatizadas via AWS Lambda
+- Integração com Telegram ou WhatsApp para alertas em tempo real
+- Implementação de testes automatizados
+
+👨‍💻 Autor
+Thiago  
+Liderança em Transformação Digital | Ciência de Dados | Agentes de IA  
+Contato profissional: [seu e-mail ou GitHub]
 
 
 
